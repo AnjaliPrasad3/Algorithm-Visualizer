@@ -1,0 +1,44 @@
+.TopBar {
+  display: flex;
+  flex-direction: column;
+}
+
+.TopBar__Row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.TopBar__Row_main {
+  padding: 15px;
+}
+
+.TopBar__Row_controls {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.TopBar__Title {
+  font-size: 24px;
+}
+
+.TopBar__MenuButton {
+  margin-right: 16px;
+  display: none;
+}
+
+.TopBar__Icon {
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 767px) {
+  .TopBar__MenuButton {
+    display: block;
+  }
+
+  .TopBar__Row_controls {
+    display: none;
+    flex-direction: column;
+  }
+}

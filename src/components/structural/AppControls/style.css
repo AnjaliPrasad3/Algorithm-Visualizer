@@ -1,0 +1,34 @@
+.AppControls {
+  display: flex;
+  justify-content: space-between;
+  font-size: x-large;
+  align-items: center;
+  padding: 10px;
+  background-color: #ddecef;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.AppControls__Size {
+  display: flex;
+  align-items: center;
+}
+
+.AppControls__Size span {
+  margin-right: 8px;
+}
+
+.AppControls > * {
+  margin: 0 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .AppControls {
+    flex-direction: column;
+    height: 100vh;
+    width: auto;
+  }
+}
